@@ -28,7 +28,7 @@ if config_env() == :prod do
   # variable instead.
   secret_key_base = "wk5R9d0pV8Q4s73QpToXOWNTBfDxe43ALvA3wkqwruKn1KBX1D3h6aCy5xszUeNl"
 
-  host = System.get_env("PHX_HOST") || "intense-retreat-59477.herokuapp.com"
+  host = System.get_env("PHX_HOST") || "sigsvr.onrender.com"
   port = String.to_integer(System.get_env("PORT") || "4000")
 
   config :signalserver, SignalserverWeb.Endpoint,
